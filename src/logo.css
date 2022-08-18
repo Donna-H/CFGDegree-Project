@@ -1,0 +1,15 @@
+.logo {
+        top: -15px;
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+        position: absolute;
+        right: 87%;
+        
+}
+
+@media only screen and (max-width: 600px){
+ .logo {
+        display:none;
+        }    
+}

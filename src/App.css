@@ -1,0 +1,53 @@
+
+:root {
+  --blue:#768CA7;
+  --white: rgb(236, 236, 236);
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+  font-weight: var(--font-weight);
+  transition: background 0.3s ease-in-out, color 0.6s ease-in-out;
+}
+
+body.light {
+  --background-color: white;
+  --text-color: var(--blue);
+  --font-weight: 400;
+}
+
+
+body.dark {
+  --background-color: var(--blue);
+  --text-color: white;
+  --font-weight: 500;
+}
+
+
+body.dark article{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  box-shadow: inset 5px 5px 15px #ffffff,
+        inset -5px -5px 10px rgba(250, 245, 245, 0.2);
+
+}
+
+nav {
+  padding: 1rem 25%;
+  margin: 50 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: var(--text-color);
+}
+
+
+nav a:hover {
+  color: rgb(12, 216, 189);
+}
+
+.Header {
+  background-image: url(./logo.png);
+}
